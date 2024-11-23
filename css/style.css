@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Old Standard TT', serif;
     margin: 0;
     padding: 0;
     background-color: #9370db; /* Fondo morado */
@@ -18,10 +18,12 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 1em;
 }
 
@@ -29,6 +31,10 @@ nav ul li a {
     color: black; /* Texto negro en la barra de navegación */
     text-decoration: none;
     font-weight: bold;
+}
+
+h1, h2, h3 {
+    font-family: 'Old Standard TT', serif;
 }
 
 .hero {
@@ -42,16 +48,16 @@ nav ul li a {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 2em auto;
+    gap: 1em;
     color: black;
     background-color: #9370db; /* Fondo morado */
     border-radius: 5px;
     padding: 1em;
-    gap: 1em;
 }
 
 .features div {
     width: 30%;
-    background-color: #9370db; /* Fondo morado */
+    background-color: #d8bfd8; /* Fondo morado claro */
     padding: 1em;
     border-radius: 5px;
     border: 1px solid black; /* Para destacar las secciones */
@@ -81,13 +87,19 @@ footer {
 }
 
 /* Estilos Responsivos */
+
+/* Para pantallas de tamaño mediano (tabletas) */
 @media (max-width: 768px) {
     header {
         text-align: center;
     }
 
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
     nav ul li {
-        display: block;
         margin: 0.5em 0;
     }
 
@@ -97,7 +109,7 @@ footer {
     }
 
     .features div {
-        width: 90%;
+        width: 90%; /* Ajusta el ancho para que las cajas ocupen todo el ancho del dispositivo */
         margin: 0 auto;
     }
 
@@ -111,16 +123,22 @@ footer {
     }
 }
 
+/* Para pantallas pequeñas (móviles) */
 @media (max-width: 480px) {
     h1, h2, h3 {
-        font-size: 1.5em;
-    }
-
-    .features div {
-        padding: 0.5em;
+        font-size: 1.2em; /* Reduce el tamaño de los títulos */
     }
 
     nav ul li a {
-        font-size: 1em;
+        font-size: 1em; /* Ajusta el tamaño del texto en la navegación */
+    }
+
+    .features div {
+        padding: 0.8em;
+        font-size: 0.9em; /* Texto más pequeño en las cajas */
+    }
+
+    .review-section img {
+        border-radius: 5px; /* Menor redondeo en imágenes */
     }
 }
