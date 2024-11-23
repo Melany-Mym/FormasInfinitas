@@ -1,15 +1,15 @@
-/* Estilos generales */
+
 body {
     font-family: 'Old Standard TT', serif;
     margin: 0;
     padding: 0;
-    background-color: #9370db; /* Fondo morado */
-    color: black; /* Texto negro */
+    background-color: #9370db; 
+    color: black; 
     text-align: center;
 }
 
 header {
-    background-color: #ffa500; /* Barra de navegación naranja claro */
+    background-color: #ffa500; 
     color: black;
     padding: 1em;
 }
@@ -28,7 +28,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black; /* Texto negro en la barra de navegación */
+    color: black; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -39,7 +39,7 @@ h1, h2, h3 {
 
 .hero {
     padding: 2em;
-    background-color: #9370db; /* Fondo morado */
+    background-color: #9370db; 
     color: black;
 }
 
@@ -50,24 +50,24 @@ h1, h2, h3 {
     margin: 2em auto;
     gap: 1em;
     color: black;
-    background-color: #9370db; /* Fondo morado */
+    background-color: #9370db; 
     border-radius: 5px;
     padding: 1em;
 }
 
 .features div {
     width: 30%;
-    background-color: #d8bfd8; /* Fondo morado claro */
+    background-color: #d8bfd8; 
     padding: 1em;
     border-radius: 5px;
-    border: 1px solid black; /* Para destacar las secciones */
+    border: 1px solid black; 
     box-sizing: border-box;
 }
 
 .review-section {
     margin: 2em auto;
     padding: 2em;
-    background-color: #9370db; /* Fondo morado */
+    background-color: #9370db; 
     color: black;
     border-radius: 5px;
     max-width: 800px;
@@ -81,14 +81,14 @@ h1, h2, h3 {
 }
 
 footer {
-    background-color: #d8bfd8; /* Fondo morado */
+    background-color: #d8bfd8; 
     padding: 1em;
     color: black;
 }
 
-/* Estilos Responsivos */
 
-/* Para pantallas de tamaño mediano (tabletas) */
+
+
 @media (max-width: 768px) {
     header {
         text-align: center;
@@ -109,7 +109,7 @@ footer {
     }
 
     .features div {
-        width: 90%; /* Ajusta el ancho para que las cajas ocupen todo el ancho del dispositivo */
+        width: 90%; 
         margin: 0 auto;
     }
 
@@ -123,26 +123,26 @@ footer {
     }
 }
 
-/* Para pantallas pequeñas (móviles) */
+
 @media (max-width: 480px) {
     h1, h2, h3 {
-        font-size: 1.2em; /* Reduce el tamaño de los títulos */
+        font-size: 1.2em; 
     }
 
     nav ul li a {
-        font-size: 1em; /* Ajusta el tamaño del texto en la navegación */
+        font-size: 1em; 
     }
 
     .features div {
         padding: 0.8em;
-        font-size: 0.9em; /* Texto más pequeño en las cajas */
+        font-size: 0.9em; 
     }
 
     .review-section img {
-        border-radius: 5px; /* Menor redondeo en imágenes */
+        border-radius: 5px; 
     }
 }
-/* Estilos de la sección de catálogo */
+
 .catalogo {
     display: flex;
     flex-wrap: wrap;
@@ -154,8 +154,8 @@ footer {
 }
 
 .producto {
-    background-color: #d8bfd8; /* Morado claro */
-    border: 1px solid #9370db; /* Bordes morados */
+    background-color: #d8bfd8; 
+    border: 1px solid #9370db; 
     border-radius: 10px;
     padding: 1em;
     width: 30%;
@@ -189,7 +189,7 @@ footer {
 .btn-comprar {
     display: inline-block;
     text-decoration: none;
-    background-color: #9370db; /* Botón morado */
+    background-color: #9370db; 
     color: white;
     padding: 0.5em 1em;
     border-radius: 5px;
@@ -198,14 +198,14 @@ footer {
 }
 
 .btn-comprar:hover {
-    background-color: #6a5acd; /* Color más oscuro al pasar el cursor */
+    background-color: #6a5acd; 
 }
-/* Estilos para la página de pago */
+
 .pago-form {
     max-width: 600px;
     margin: 2em auto;
     padding: 1.5em;
-    background-color: #d8bfd8; /* Morado claro */
+    background-color: #d8bfd8; 
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: 'Old Standard TT', serif;
@@ -251,5 +251,57 @@ footer {
 }
 
 .pago-form button:hover {
-    background-color: #6a5acd; /* Botón más oscuro al pasar el cursor */
+    background-color: #6a5acd; 
+}
+
+.about-us {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin: 2em auto;
+    padding: 1em;
+    max-width: 1200px;
+    background-color: #e6e6fa; 
+    border-radius: 10px;
+}
+
+
+.about-us .image {
+    flex: 1;
+    padding-right: 2em;
+}
+
+.about-us .text {
+    flex: 2;
+}
+
+
+.about-us .image img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+
+.about-us .image img:hover {
+    transform: scale(1.05); 
+}
+
+
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column; 
+    }
+
+    .about-us .image {
+        padding-right: 0;
+        padding-bottom: 1em;
+    }
+
+    .about-us .image img {
+        max-width: 90%; 
+    }
 }
