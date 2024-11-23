@@ -200,3 +200,56 @@ footer {
 .btn-comprar:hover {
     background-color: #6a5acd; /* Color más oscuro al pasar el cursor */
 }
+/* Estilos para la página de pago */
+.pago-form {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1.5em;
+    background-color: #d8bfd8; /* Morado claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Old Standard TT', serif;
+}
+
+.pago-form fieldset {
+    border: 1px solid #9370db;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.pago-form legend {
+    font-weight: bold;
+    color: #4b0082;
+}
+
+.pago-form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+    color: black;
+}
+
+.pago-form input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #9370db;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    font-family: inherit;
+}
+
+.pago-form button {
+    width: 100%;
+    background-color: #9370db;
+    color: white;
+    padding: 0.7em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pago-form button:hover {
+    background-color: #6a5acd; /* Botón más oscuro al pasar el cursor */
+}
