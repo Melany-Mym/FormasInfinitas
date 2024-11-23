@@ -2,18 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #808080; /* Fondo gris */
+    color: white;
+    text-align: center; /* Texto centrado */
 }
 
 header {
-    background-color: #333;
+    background-color: #ff00ff; /* Barra de navegación fucsia */
     color: white;
     padding: 1em;
-    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -27,29 +30,43 @@ nav ul li a {
 }
 
 .hero {
-    text-align: center;
     padding: 2em;
     background-color: #f4f4f4;
+    color: black; /* Para mejor contraste */
 }
 
-.features, .catalogo {
+.features {
     display: flex;
     justify-content: space-around;
-    margin: 2em;
-}
-
-.producto {
-    text-align: center;
-}
-
-form {
-    max-width: 300px;
     margin: 2em auto;
-    display: flex;
-    flex-direction: column;
+    color: white;
 }
 
-input {
-    margin: 0.5em 0;
-    padding: 0.5em;
+.features div {
+    width: 30%;
+    background-color: #555;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.review-section {
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+    max-width: 800px;
+}
+
+.review-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: #222;
+    padding: 1em;
+    margin-top: 2em;
 }
