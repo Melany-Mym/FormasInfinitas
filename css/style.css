@@ -81,7 +81,7 @@ h1, h2, h3 {
 }
 
 footer {
-    background-color: #9370db; /* Fondo morado */
+    background-color: #d8bfd8; /* Fondo morado */
     padding: 1em;
     color: black;
 }
@@ -141,4 +141,62 @@ footer {
     .review-section img {
         border-radius: 5px; /* Menor redondeo en imágenes */
     }
+}
+/* Estilos de la sección de catálogo */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5em;
+    margin: 2em auto;
+    max-width: 1200px;
+    padding: 1em;
+}
+
+.producto {
+    background-color: #d8bfd8; /* Morado claro */
+    border: 1px solid #9370db; /* Bordes morados */
+    border-radius: 10px;
+    padding: 1em;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.producto h3 {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+}
+
+.producto p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.btn-comprar {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #9370db; /* Botón morado */
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #6a5acd; /* Color más oscuro al pasar el cursor */
 }
