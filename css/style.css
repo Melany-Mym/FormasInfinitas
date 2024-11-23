@@ -1,15 +1,16 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #808080; /* Fondo gris */
-    color: white;
-    text-align: center; /* Texto centrado */
+    background-color: #9370db; /* Fondo morado */
+    color: black; /* Texto negro */
+    text-align: center;
 }
 
 header {
-    background-color: #ff00ff; /* Barra de navegación fucsia */
-    color: white;
+    background-color: #ffa500; /* Barra de navegación naranja claro */
+    color: black;
     padding: 1em;
 }
 
@@ -25,35 +26,43 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: black; /* Texto negro en la barra de navegación */
     text-decoration: none;
+    font-weight: bold;
 }
 
 .hero {
     padding: 2em;
-    background-color: #f4f4f4;
-    color: black; /* Para mejor contraste */
+    background-color: #9370db; /* Fondo morado */
+    color: black;
 }
 
 .features {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 2em auto;
-    color: white;
+    color: black;
+    background-color: #9370db; /* Fondo morado */
+    border-radius: 5px;
+    padding: 1em;
+    gap: 1em;
 }
 
 .features div {
     width: 30%;
-    background-color: #555;
+    background-color: #9370db; /* Fondo morado */
     padding: 1em;
     border-radius: 5px;
+    border: 1px solid black; /* Para destacar las secciones */
+    box-sizing: border-box;
 }
 
 .review-section {
     margin: 2em auto;
     padding: 2em;
-    background-color: #444;
-    color: white;
+    background-color: #9370db; /* Fondo morado */
+    color: black;
     border-radius: 5px;
     max-width: 800px;
 }
@@ -66,7 +75,52 @@ nav ul li a {
 }
 
 footer {
-    background-color: #222;
+    background-color: #9370db; /* Fondo morado */
     padding: 1em;
-    margin-top: 2em;
+    color: black;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .features div {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .hero {
+        padding: 1em;
+    }
+
+    .review-section {
+        padding: 1em;
+        margin: 1em auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    .features div {
+        padding: 0.5em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
 }
